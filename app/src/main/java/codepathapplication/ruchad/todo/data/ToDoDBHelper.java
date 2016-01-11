@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import codepathapplication.ruchad.todo.ToDoMainActivity;
+import codepathapplication.ruchad.todo.activities.ToDoMainActivity;
 
 /**
  * Created by ruchadeshmukh on 1/1/16.

@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ToDoMainActivity">
+        <activity android:name=".activities.ToDoMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,24 +17,24 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ToDoAddActivity"
+        <activity android:name=".activities.ToDoAddActivity"
             android:label="Add">
         </activity>
 
-        <activity android:name=".ToDoDetailActivity"
+        <activity android:name=".activities.ToDoDetailActivity"
             android:label="Details">
         </activity>
 
-        <activity android:name=".ToDoEditActivity"
+        <activity android:name=".activities.ToDoEditActivity"
             android:label="Edit">
         </activity>
 
-        <activity android:name=".SettingsActivity"
+        <activity android:name=".activities.SettingsActivity"
             android:label="Settings"
             android:theme="@style/SettingsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ToDoMainActivity"/>
+                android:value=".activities.ToDoMainActivity"/>
         </activity>
 
         <provider
@@ -44,7 +44,7 @@
             android:syncable="true"/>
 
         <receiver android:process=":remote"
-            android:name=".ReminderAlarmService">
+            android:name=".receivers.ReminderAlarmService">
         </receiver>
 
     </application>
